@@ -37,9 +37,6 @@
 			}
 		},
 		"author": "Microchip",
-		"links": [
-            "https://github.com/SyedThaseemuddin/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
-        ],
 		"subcategories": [
 			[
 				"Development Kit", "PIC32MK GP Development Kit"
@@ -81,9 +78,6 @@
 					"mimeType": "text/markdown"
 				}
 			},
-			"links": {
-				"downloadUrl": "https://github.com/SyedThaseemuddin/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
-			}
 		}
 	}
 }
