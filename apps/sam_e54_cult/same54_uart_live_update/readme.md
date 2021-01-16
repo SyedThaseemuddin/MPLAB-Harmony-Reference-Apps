@@ -2,7 +2,7 @@
 grand_parent: Reference Applications
 parent: SAM E54 Curiosity Ultra Development Board
 title: Live update on SAME54
-nav_order: 2
+nav_order: 3
 ---
 <img src = "images/microchip_logo.png">
 <img src = "images/microchip_mplab_harmony_logo_small.png">
@@ -35,19 +35,19 @@ The banks on SAME54 MCU are named as BANK-A and BANK-B. At any point in time, th
 
 ## Software/Tools Used:
 <span style="color:blue"> *This project has been verified to work with the following versions of software tools:*</span>
- - [MPLAB Harmony v3 "bsp" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/bsp/releases/tag/v3.8.1)
- - [MPLAB Harmony v3 "csp" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.1)
- - [MPLAB Harmony v3 "core" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/core/releases/tag/v3.8.1)
- - [MPLAB Harmony v3 "dev_packs" repo v3.8.0](https://github.com/Microchip-MPLAB-Harmony/dev_packs/releases/tag/v3.8.0)
- - [MPLAB Harmony v3 "mhc" repo v3.5.1](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.5.1)
- - [MPLAB Harmony v3 "bootloader" repo v3.4.1](https://github.com/Microchip-MPLAB-Harmony/bootloader/tree/v3.4.1)
- - [MPLAB Harmony v3 "bootloader_apps_uart" repo v3.0.1](https://github.com/Microchip-MPLAB-Harmony/bootloader_apps_uart/releases/tag/v3.0.1)
- - MPLAB Harmony Configurator Plugin v3.6.0
- - [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
- - [MPLAB XC32 Compiler v2.41](https://www.microchip.com/mplab/compilers)
- - Windows command prompt
- - Python 2.7 or above
- - Any Serial Terminal application like Tera Term terminal application.
+- [MPLAB Harmony v3 "bsp" repo v3.8.2](https://github.com/Microchip-MPLAB-Harmony/bsp/releases/tag/v3.8.2)
+- [MPLAB Harmony v3 "csp" repo v3.8.3](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.3)
+- [MPLAB Harmony v3 "core" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/core/releases/tag/v3.8.1)
+- [MPLAB Harmony v3 "dev_packs" repo v3.8.0](https://github.com/Microchip-MPLAB-Harmony/dev_packs/releases/tag/v3.8.0)
+- [MPLAB Harmony v3 "mhc" repo v3.6.5](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.6.5)
+- [MPLAB Harmony v3 "bootloader" repo v3.4.1](https://github.com/Microchip-MPLAB-Harmony/bootloader/tree/v3.4.1)
+- [MPLAB Harmony v3 "bootloader_apps_uart" repo v3.0.2](https://github.com/Microchip-MPLAB-Harmony/bootloader_apps_uart/releases/tag/v3.0.2)
+- MPLAB Harmony 3 Launcher Plugin v3.6.2
+- [MPLAB X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB XC32 Compiler v2.41](https://www.microchip.com/mplab/compilers)
+- Windows command prompt
+- Python 2.7
+- Any Serial Terminal application like Tera Term terminal application.
 
 <span style="color:blue"> *Because Microchip regularly update tools, occasionally issue(s) could be discovered while using the newer versions of the tools. If the project doesn’t seem to work and version incompatibility is suspected, It is recommended to double-check and use the same versions that the project was tested with.* </span>
 
@@ -61,15 +61,15 @@ The banks on SAME54 MCU are named as BANK-A and BANK-B. At any point in time, th
 4. Open the UART Fail Safe Bootloader which is in (path: `<Your Harmony Framework download folder>/bootloader_apps_uart/apps/uart_fail_safe_bootloader/bootloader/firmware/sam_e54_xpro.X`) using the MPLAB X IDE.
 5. The project needs to be reconfigured to work on SAM E54 Curiosity Ultra Development Board. Launch the MHC and follow below steps to reconfigure for SAM E54 Curiosity Ultra Development Board.
     * Remove SERCOM2
-      * <img src = "images/uartFailSafeBootloader_remove_sercom2.png" width="775" height="302" align="middle">
+      * <img src = "images/uartfailsafebootloader_remove_sercom2.png" width="775" height="302" align="middle">
     * Add SERCOM1 to Project Graph
-      * <img src = "images/uartFailSafeBootloader_add_sercom1.png" width="527" height="418" align="middle">
+      * <img src = "images/uartfailsafebootloader_add_sercom1.png" width="527" height="418" align="middle">
     * Configure SERCOM1 peripheral
-      * <img src = "images/uartFailSafeBootloader_sercom1_conf.png" width="806" height="314" align="middle">
+      * <img src = "images/uartfailsafebootloader_sercom1_conf.png" width="806" height="314" align="middle">
     * Launch Pin Configurations plugin under **MHC->Tools->Pin Configurations**. Remove SERCOM2 Pin configurations.
-      * <img src = "images/uartFailSafeBootloader_undo_sercom2_pin_conf.png" width="854" height="325" align="middle">
+      * <img src = "images/uartfailsafebootloader_undo_sercom2_pin_conf.png" width="854" height="325" align="middle">
     * Configure SERCOM1 pins.
-      * <img src = "images/uartFailSafeBootloader_sercom1_pin_conf.png" width="848" height="134" align="middle">
+      * <img src = "images/uartfailsafebootloader_sercom1_pin_conf.png" width="848" height="134" align="middle">
     - **Note:**
       - The SAM E54 Curiosity Ultra Development Board uses SERCOM1 peripheral for EDBG. Hence SERCOM peripheral and its pins need to be reconfigured from SAM E54 Xplained Pro to SAM E54 Curiosity Ultra Development Board.
       - Do not close the MHC as we have to build the project again.
@@ -116,10 +116,11 @@ The banks on SAME54 MCU are named as BANK-A and BANK-B. At any point in time, th
    * Reset or Power cycle the device and repeat from the step 4 to program the Live update application.
 
 ## Comments:
-- Reference Application Note: [Live Update application on SAME54 MCUs using MPLAB Harmony v3]()
+- Reference Application Note: [Live Update application on SAME54 MCUs using MPLAB Harmony v3](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1005443)
 - This application demo builds and works out of box by following the instructions above in "Running the Demo" section. If you need to enhance/customize this application demo, you need to use the MPLAB Harmony v3 Software framework. Refer links below to setup and build your applications using MPLAB Harmony.
 	- [How to Setup MPLAB Harmony v3 Software Development Framework](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000821)
 	- [How to Build an Application by Adding a New PLIB, Driver, or Middleware to an Existing MPLAB Harmony v3 Project](http://ww1.microchip.com/downloads/en/DeviceDoc/How_to_Build_Application_Adding_PLIB_%20Driver_or_Middleware%20_to_MPLAB_Harmony_v3Project_DS90003253A.pdf)
 
 ## Revision:
+- v1.2.0 regenerated and tested demo application
 - v1.1.0 released demo application

@@ -34,15 +34,15 @@ The banks on PIC32MZ MCU are named as BANK1 and BANK2. At any point of time, the
 ## Software/Tools Used:
 <span style="color:blue"> *This project has been verified to work with the following versions of software tools:*</span>
 
-- [MPLAB Harmony v3 "bsp" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/bsp/releases/tag/v3.8.1)
-- [MPLAB Harmony v3 "csp" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.1)
+- [MPLAB Harmony v3 "bsp" repo v3.8.2](https://github.com/Microchip-MPLAB-Harmony/bsp/releases/tag/v3.8.2)
+- [MPLAB Harmony v3 "csp" repo v3.8.3](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.3)
 - [MPLAB Harmony v3 "core" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/core/releases/tag/v3.8.1)
 - [MPLAB Harmony v3 "dev_packs" repo v3.8.0](https://github.com/Microchip-MPLAB-Harmony/dev_packs/releases/tag/v3.8.0)
-- [MPLAB Harmony v3 "mhc" repo v3.5.1](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.5.1)
+- [MPLAB Harmony v3 "mhc" repo v3.6.5](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.6.5)
 - [MPLAB Harmony v3 "bootloader" repo v3.4.1](https://github.com/Microchip-MPLAB-Harmony/bootloader/tree/v3.4.1)
-- [MPLAB Harmony v3 "bootloader_apps_uart" repo v3.0.1](https://github.com/Microchip-MPLAB-Harmony/bootloader_apps_uart/releases/tag/v3.0.1)
-- MPLAB Harmony Configurator Plugin v3.6.0
-- [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB Harmony v3 "bootloader_apps_uart" repo v3.0.2](https://github.com/Microchip-MPLAB-Harmony/bootloader_apps_uart/releases/tag/v3.0.2)
+- MPLAB Harmony 3 Launcher Plugin v3.6.2
+- [MPLAB X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)
 - [MPLAB XC32 Compiler v2.41](https://www.microchip.com/mplab/compilers)
 - Windows command prompt
 - Python 2.7
@@ -63,7 +63,7 @@ The banks on PIC32MZ MCU are named as BANK1 and BANK2. At any point of time, the
   - **Note:** If you need to know more information on the bootloader host script, refer Help for setting up the host script available at `<Your Harmony Framework download folder>/bootloader/doc/help_bootloader.chm`
 6. Following screenshot shows successful programming of the application binary.
 7. The messages "Swapping Bank And Rebooting and Reboot Done" in below screenshot signifies that bootloading is successful.
-- <img src = "images/BootloaderScript_Result.png" width="442" height="153" align="middle">
+- <img src = "images/bootloaderscript_result.png" width="442" height="153" align="middle">
 
 ## Running the Live update application:
 1. Perform "Running the Bootloader application" steps mentioned above, if not done already.
@@ -72,9 +72,9 @@ The banks on PIC32MZ MCU are named as BANK1 and BANK2. At any point of time, the
 4. Run the host script "**live_update.py**" for live update application from command prompt available at `<Live Update application folder>/scripts` to program the new version of the firmware to an inactive panel while the current version of the application is being run from the active panel.
    - `python <Live Update application folder>/scripts/live_update.py -v -s -i <COM PORT> -d pic32mz  -a 0x9D100000 -f <Live Update application folder>/firmware/pic32mz_ef_sk.X/dist/pic32mz_ef_sk/production/pic32mz_ef_sk.X.production.bin`
    - The following screenshot shows the Live update script help.
-   - <img src = "images/BootloaderScript_Help.png" width="656" height="315" align="middle">
+   - <img src = "images/bootloaderscript_help.png" width="656" height="315" align="middle">
 5. The following screenshot shows the example for output of successful firmware programming.
-   - <img src = "images/LiveUpdateScrip_Result.png" width="522" height="262" align="middle">
+   - <img src = "images/liveupdatescrip_result.png" width="522" height="262" align="middle">
 6. If the Live update is success then LED3 should turn ON.
    * This indicates that the Live update is successful
 7. In case of any error during the Live update i.e. in Step 4, the LED3 turns OFF. Follow the below steps recover from the error:
@@ -88,11 +88,12 @@ The banks on PIC32MZ MCU are named as BANK1 and BANK2. At any point of time, the
    * Observe the change in LED toggling compared to the LED which was toggling in the previous step. This indicates that the newly updated image is running properly.
 
 ## Comments:
-- Reference Application Note: [Live Update application on PIC32MZ MCUs using MPLAB Harmony v3]()
+- Reference Application Note: [Live Update application on PIC32MZ MCUs using MPLAB Harmony v3](http://ww1.microchip.com/downloads/en/Appnotes/Live_Update_Application_on_PIC32MZ_MCUs_Using_MPLAB_Harmonyv3_DS00003703A.pdf)
 - This application demo builds and works out of box by following the instructions above in "Running the Demo" section. If you need to enhance/customize this application demo, you need to use the MPLAB Harmony v3 Software framework. Refer links below to setup and build your applications using MPLAB Harmony.
 	- [How to Setup MPLAB Harmony v3 Software Development Framework](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000821)
 	- [How to Build an Application by Adding a New PLIB, Driver, or Middleware to an Existing MPLAB Harmony v3 Project](http://ww1.microchip.com/downloads/en/DeviceDoc/How_to_Build_Application_Adding_PLIB_%20Driver_or_Middleware%20_to_MPLAB_Harmony_v3Project_DS90003253A.pdf)
 
 ## Revision:
+- v1.2.0 regenerated and tested the application
 - v1.1.0 regenerated and tested the application
 - v1.0.0 released demo application

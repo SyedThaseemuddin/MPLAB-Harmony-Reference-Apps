@@ -47,11 +47,11 @@ This following bullet points provides links to the detailed topics:
 ## Software/Tools Used:
 <span style="color:blue"> *This project has been verified to work with the following versions of software tools:*</span>  
 
- - [MPLAB Harmony v3 "csp" repo v3.8.1](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.1)        
+ - [MPLAB Harmony v3 "csp" repo v3.8.3](https://github.com/Microchip-MPLAB-Harmony/csp/releases/tag/v3.8.3)  
  - [MPLAB Harmony v3 "dev_packs" repo v3.8.0](https://github.com/Microchip-MPLAB-Harmony/dev_packs/releases/tag/v3.8.0)  
- - [MPLAB Harmony v3 "mhc" repo v3.5.1](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.5.1)
- - MPLAB Harmony Configurator Plugin v3.6.0
- - [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
+ - [MPLAB Harmony v3 "mhc" repo v3.6.5](https://github.com/Microchip-MPLAB-Harmony/mhc/releases/tag/v3.6.5)  
+ - MPLAB Harmony 3 Launcher Plugin v3.6.2  
+ - [MPLAB X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)  
  - [MPLAB XC32 Compiler v2.41](https://www.microchip.com/mplab/compilers)
 
 <span style="color:blue"> *Because Microchip regularly update tools, occasionally issue(s) could be discovered while using the newer versions of the tools. If the project doesn't seem to work and version incompatibility is suspected, It is recommended to double-check and use the same versions that the project was tested with.* </span>
@@ -73,14 +73,18 @@ This following bullet points provides links to the detailed topics:
 
 ## <a id="setting-up-the-build-platform"> </a>
 ## Setting up the build platform
-- Download and extract [ACK Device SDK 3.1](https://developer.amazon.com/alexa/console/ack/resources) from Amazon developer website.
+- Download and extract [ACK Device SDK 3.2](https://developer.amazon.com/alexa/console/ack/resources) from Amazon developer website.
 - Copy and paste extracted  SAM D21 ACK port folder "samd21_amazon_ack" into ACK device SDK's user platform folder  
-  `<Your ACK SDK Downloaded folder>/ACK_Device_SDK_3.1.202002192328/user/platform`
+  `<Your ACK SDK Downloaded folder>/ACK_Device_SDK_3.2.202009091708/user/platform`
+
+**Note**
+- Make sure you create **amazon.com** account for downloading the SDK. You would use your Amazon credentials to register your development device (amazon.com account provides an option to register your development device.)
+- "ACK Module with MediaTek chipset" is used in these demo's. make sure you download proper ACK SDK from the Amazon website
 
 ## <a id="project-structure"> </a>
 ## Project file structure
 - ACK SDK file/directory structure, refer "Readme.txt" in  
-`<Your ACK SDK Downloaded folder>\ACK_Device_SDK_3.1.202002192328\`
+`<Your ACK SDK Downloaded folder>\ACK_Device_SDK_3.2.202009091708\`
 - SAM D21 ACK port file/directory is as follows
   - user/platform/samd21_amazon_ack/
     - **applications**                : Contains all the ACK host sample applications built on MPLABX Tools and xc32 compiler
@@ -138,4 +142,5 @@ The pre-built hex file can be programmed by following the below steps.
 	- [How to Build an Application by Adding a New PLIB, Driver, or Middleware to an Existing MPLAB Harmony v3 Project](http://ww1.microchip.com/downloads/en/DeviceDoc/How_to_Build_Application_Adding_PLIB_%20Driver_or_Middleware%20_to_MPLAB_Harmony_v3Project_DS90003253A.pdf)  
 
 ### Revision:
+- v1.2.0 Updated to support Amazon ACK SDK 3.2
 - v1.1.0 released demo application

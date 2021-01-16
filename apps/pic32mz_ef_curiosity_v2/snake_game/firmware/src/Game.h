@@ -46,12 +46,12 @@
 extern "C" {
 #endif
 
-#include "config\default\gfx\legato\generated\screen\le_gen_screen_Menu.h"  
+#include "config/default/gfx/legato/generated/screen/le_gen_screen_Menu.h"  
 #include "gfx/legato/generated/screen/le_gen_screen_Game_Level1.h"
 #include "Thumbstick.h"
-#include "config\default\gfx\legato\widget\label\legato_widget_label.h"
+#include "config/default/gfx/legato/widget/label/legato_widget_label.h"
 #include "custom_colors.h"
-#include "config\default\system\time\sys_time.h"
+#include "config/default/system/time/sys_time.h"
 #include <stdio.h>
 
     
@@ -159,8 +159,6 @@ extern uint8_t game_over_flag;
 extern bool game_update_flag;
 
 extern bool splash_screen_time_update;
-
-extern leDynamicString snake_size_str;
 
 extern struct Hearts hearts;
 
