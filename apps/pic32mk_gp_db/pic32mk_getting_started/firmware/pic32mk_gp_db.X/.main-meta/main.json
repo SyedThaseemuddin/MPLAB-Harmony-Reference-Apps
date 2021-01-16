@@ -38,7 +38,7 @@
 		},
 		"author": "Microchip",
 		"links": [
-            "https://github.com/MicrochipTech/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
+            "https://github.com/SyedThaseemuddin/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
         ],
 		"subcategories": [
 			[
@@ -82,7 +82,7 @@
 				}
 			},
 			"links": {
-				"downloadUrl": "https://github.com/MicrochipTech/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
+				"downloadUrl": "https://github.com/SyedThaseemuddin/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
 			}
 		}
 	}
