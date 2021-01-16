@@ -37,6 +37,9 @@
 			}
 		},
 		"author": "Microchip",
+		"links": [
+            "https://github.com/MicrochipTech/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
+        ],
 		"subcategories": [
 			[
 				"Development Kit", "PIC32MK GP Development Kit"
@@ -60,12 +63,12 @@
 			"Serial Communication",
 			"USART",
 			"SERCOM",
-			"FLEXCOM"
-			"Getting Started"
-			"SPI"
-			"Timer"
-			"Core Timer"
-			"GPIO"
+			"FLEXCOM",
+			"Getting Started",
+			"SPI",
+			"Timer",
+			"Core Timer",
+			"GPIO",
 			"DMA"
 		],
 		"additionalData": {
@@ -77,7 +80,7 @@
 					"fileName": "./../../readme.md",
 					"mimeType": "text/markdown"
 				}
-			}
+			},
 			"links": {
 				"downloadUrl": "https://github.com/MicrochipTech/MPLAB-Harmony-Reference-Apps/releases/latest/download/pic32mk_getting_started.zip"
 			}
