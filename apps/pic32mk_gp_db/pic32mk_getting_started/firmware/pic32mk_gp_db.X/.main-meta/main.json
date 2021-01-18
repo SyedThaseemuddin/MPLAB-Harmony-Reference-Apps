@@ -37,32 +37,6 @@
 			}
 		},
 		"author": "Microchip",
-		"subcategories": [
-			[
-				"Development Kit", "PIC32MK GP Development Kit"
-			],
-			[
-				"Harmony", "Peripherals", "SPI"
-			],			
-			[
-				"Harmony", "Peripherals", "UART"
-			],
-			[
-				"Harmony", "Peripherals", "Timer"
-			],		
-			[
-				"Harmony", "Peripherals", "Core Timer"
-			],
-			[
-				"Harmony", "Peripherals", "GPIO"
-			],		
-			[
-				"Harmony", "Peripherals", "DMA"
-			],	
-			[
-				"Getting Started", "PIC32MK GP Development Kit"
-			]
-		],
 		"peripherals": [
 			"UART", "SPI", "Timer", "Core Timer", "GPIO", "DMA"
 		],
