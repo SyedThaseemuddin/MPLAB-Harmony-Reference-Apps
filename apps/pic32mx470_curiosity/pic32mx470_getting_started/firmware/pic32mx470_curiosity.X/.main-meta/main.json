@@ -45,6 +45,9 @@
 				"Harmony", "Peripherals", "SPI"
 			],
 			[
+				"Harmony", "Peripherals", "UART"
+			],			
+			[
 				"Peripherals", "UART", "Getting Started"
 			]
 		],
