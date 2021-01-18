@@ -2,7 +2,7 @@
 	"metaDataVersion": "1.0.0",
 	"category": "com.microchip.ide.project",
 	"content": {
-		"metaDataVersion": "1.2.0",
+		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_pic32mx470_getting_started",
 		"version": "1.2.0",
 		"displayName": "Getting Started Application on Curiosity PIC32MX470 Development Board",
@@ -41,6 +41,9 @@
 			[
 				"Development Kit", "Curiosity PIC32MX470 Development Board"
 			],
+			[
+				"Harmony", "Peripherals", "SPI"
+			],				
 			[
 				"Harmony", "Peripherals", "UART"
 			],			
