@@ -45,7 +45,22 @@
 				"Harmony", "Peripherals", "UART"
 			],
 			[
-				"Peripherals", "UART", "Getting Started"
+				"Harmony", "Peripherals", "SPI"
+			],
+			[
+				"Harmony", "Peripherals", "Timer"
+			],		
+			[
+				"Harmony", "Peripherals", "Core Timer"
+			],
+			[
+				"Harmony", "Peripherals", "GPIO"
+			],		
+			[
+				"Harmony", "Peripherals", "DMA"
+			],	
+			[
+				"Getting Started", "PIC32MK GP Development Kit"
 			]
 		],
 		"peripherals": [
