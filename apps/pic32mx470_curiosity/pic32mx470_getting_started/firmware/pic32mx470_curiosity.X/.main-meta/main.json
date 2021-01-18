@@ -3,10 +3,10 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_pic32mk_getting_started",
+		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_pic32mx470_getting_started",
 		"version": "1.2.0",
-		"displayName": "Getting Started Application on PIC32MK General Purpose (GP) Development Board",
-		"projectName": "getting_started_pic32mk_gp_db",
+		"displayName": "Getting Started Application on Curiosity PIC32MX470 Development Board",
+		"projectName": "getting_started_pic32mx470_curiosity",
 		"shortDescription": "Demonstrates how to get started using the basic peripherals like UART, SPI, Timer, Core Timer, DMA and GPIOs",
 		"ide": {
 			"name": "MPLABX",
@@ -19,8 +19,8 @@
 			}
 		],
 		"dfp": {
-			"name": "PIC32MK-GP_DFP",
-			"semverRange": "^1.4.117"
+			"name": "PIC32MX_DFP",
+			"semverRange": "^1.3.231"
 		},
 		"configurator": {
 			"name": "MHC",
@@ -32,17 +32,17 @@
 			"content": {
 				"metaDataVersion": "1.0.0",
 				"category": "com.microchip.device",
-				"name": "PIC32MK1024GPE100",
+				"name": "PIC32MX470F512H",
 				"versionRange": "*"
 			}
 		},
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "PIC32MK GP Development Kit"
+				"Development Kit", "Curiosity PIC32MX470 Development Board"
 			],
 			[
-				"Harmony", "Peripherals", "UART"
+				"Harmony", "Peripherals", "SPI"
 			],
 			[
 				"Peripherals", "UART", "Getting Started"
@@ -54,12 +54,11 @@
 		"keywords": [
 			"MHC",
 			"Harmony",
-			"PIC32MK1024GPE100",
-			"PIC32MK Family",
+			"PIC32MX470F512H",
+			"PIC32MX Family",
 			"UART",
 			"Serial Communication",
 			"USART",
-			"SERCOM",
 			"FLEXCOM",
 			"Getting Started",
 			"SPI",
