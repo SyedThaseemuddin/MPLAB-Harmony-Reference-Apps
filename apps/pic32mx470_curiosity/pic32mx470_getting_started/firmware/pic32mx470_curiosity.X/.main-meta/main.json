@@ -2,9 +2,9 @@
 	"metaDataVersion": "1.0.0",
 	"category": "com.microchip.ide.project",
 	"content": {
-		"metaDataVersion": "1.1.0",
+		"metaDataVersion": "1.2.0",
 		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_pic32mx470_getting_started",
-		"version": "1.2.1",
+		"version": "1.2.0",
 		"displayName": "Getting Started Application on Curiosity PIC32MX470 Development Board",
 		"projectName": "getting_started_pic32mx470_curiosity",
 		"shortDescription": "Demonstrates how to get started using the basic peripherals like UART, SPI, Timer, Core Timer, DMA and GPIOs",
