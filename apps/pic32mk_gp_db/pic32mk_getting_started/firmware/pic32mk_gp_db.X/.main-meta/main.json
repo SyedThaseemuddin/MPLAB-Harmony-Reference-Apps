@@ -42,10 +42,10 @@
 				"Development Kit", "PIC32MK GP Development Kit"
 			],
 			[
-				"Harmony", "Peripherals", "UART"
-			],
-			[
 				"Harmony", "Peripherals", "SPI"
+			],			
+			[
+				"Harmony", "Peripherals", "UART"
 			],
 			[
 				"Harmony", "Peripherals", "Timer"
