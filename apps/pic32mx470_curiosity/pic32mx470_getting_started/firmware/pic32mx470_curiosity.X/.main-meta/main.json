@@ -42,9 +42,6 @@
 				"Development Kit", "Curiosity PIC32MX470 Development Board"
 			],
 			[
-				"Harmony", "Peripherals", "SPI"
-			],
-			[
 				"Harmony", "Peripherals", "UART"
 			],			
 			[
