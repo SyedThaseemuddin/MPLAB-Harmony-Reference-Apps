@@ -42,11 +42,8 @@
 				"Development Kit", "PIC32MK GP Development Kit"
 			],
 			[
-				"Harmony", "Peripherals", "UART"
-			],
-			[
-				"Peripherals", "UART", "Getting Started"
-			]
+				"Harmony", "Reference Apps"
+			]			
 		],
 		"peripherals": [
 			"UART", "SPI", "Timer", "Core Timer", "GPIO", "DMA"
