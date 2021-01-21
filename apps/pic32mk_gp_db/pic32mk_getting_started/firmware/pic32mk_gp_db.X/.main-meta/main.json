@@ -5,7 +5,7 @@
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_pic32mk_getting_started",
 		"version": "1.2.0",
-		"displayName": "Getting Started Application on PIC32MK General Purpose (GP) Development Board",
+		"displayName": "Getting Started Application on PIC32MK General Purpose (GP) Development Kit",
 		"projectName": "getting_started_pic32mk_gp_db",
 		"shortDescription": "Demonstrates how to get started using the basic peripherals like UART, SPI, Timer, Core Timer, DMA and GPIOs",
 		"ide": {
@@ -63,7 +63,9 @@
 			"Timer",
 			"Core Timer",
 			"GPIO",
-			"DMA"
+			"DMA",
+			"Weather",
+			"Click"
 		],
 		"additionalData": {
 			"longDescription": {

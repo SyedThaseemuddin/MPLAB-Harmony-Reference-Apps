@@ -62,7 +62,12 @@
 			"Timer",
 			"Core Timer",
 			"GPIO",
-			"DMA"
+			"DMA",
+			"Weather",
+			"Click",
+			"USB",
+			"Curiosity",
+			"PIC32MX470"
 		],
 		"additionalData": {
 			"longDescription": {
