@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_getting_started_drv",
+		"name": "com.microchip.mcu32.mplabx.project.MPLAB-Harmony-Reference-Apps_same70_getting_started",
 		"version": "1.2.0",
-		"displayName": "Getting Started with Harmony Drivers on SAM E70 Xplained Ultra Evaluation Kit",
-		"projectName": "getting_started_drivers_sam_e70_xult",
-		"shortDescription": "Demonstrates how to get started using Harmony drivers (I2C, USART)",
+		"displayName": "Getting Started Application on SAM E70 Xplained Ultra Evaluation Kit",
+		"projectName": "getting_started_sam_e70_xult",
+		"shortDescription": "Demonstrates how to get started using the basic peripherals like PORTS, Timer, XDMAC, USART, TWIHS(I2C)",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=5.40.0"
@@ -59,8 +59,8 @@
 			"Getting Started",
 			"Timer",
 			"PORTS",
-			"EEPROM",
-			"Temperature",			
+			"Temperature",	
+			"Sensor",	
 			"SAM E70",
 			"SAME70",
 			"I/O1 Xplained",
